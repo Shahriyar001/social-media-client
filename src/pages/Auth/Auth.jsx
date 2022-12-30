@@ -1,6 +1,7 @@
 import React from 'react';
 import './Auth.css'
 import Logo from '../../img/logo.png'
+import { Link } from 'react-router-dom';
 
 const Auth = () => {
     return (
@@ -63,7 +64,7 @@ function Signup() {
                 </div>
 
                 <div>
-                    <span>Already have an account. Login!</span>
+                    <span>Already have an account? <Link to='/login' className='text-red-600'>Login!</Link> </span>
                 </div>
 
                 <button className="button infoButton" type='submit'>Signup</button>

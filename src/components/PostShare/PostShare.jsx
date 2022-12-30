@@ -9,7 +9,7 @@ import { UilTimes } from "@iconscout/react-unicons";
 
 const PostShare = () => {
     const [image, setImage] = useState(null)
-    const imageRef = useRef()
+    const imageRef = useRef();
     const onImageChange = (event) => {
         if (event.target.files && event.target.files[0]) {
             let img = event.target.files[0];

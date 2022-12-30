@@ -7,8 +7,9 @@ const InfoCard = () => {
         <div className="InfoCard">
             <div className="infoHead">
                 <h4>Your Info</h4>
-                <UilPen width="2rem"
-                    height="1.2rem" />
+                <label htmlFor="info-modal" className="btn"><UilPen width="2rem"
+                    height="1.2rem" /></label>
+
             </div>
             <div className="info">
                 <span>

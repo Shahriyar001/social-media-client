@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Cover from '../../img/cover.jpg';
 import Profile from '../../img/profileImg.jpg';
 import './ProfileCard.css'
@@ -12,7 +13,7 @@ const ProfileCard = () => {
                 <img src={Profile} alt="" />
             </div>
             <div className="ProfileName">
-                <span>Zenda MJ</span>
+                <span>Shahriyar Mahbub</span>
                 <span>Senior Developer</span>
             </div>
             <div className="followStatus">
@@ -39,7 +40,7 @@ const ProfileCard = () => {
                 </div>
                 <hr />
             </div>
-            {ProfilePage ? "" : <span>My Profile</span>}
+            <span> <Link to="/profile">My Profile</Link> </span>
 
         </div>
     );
